@@ -338,6 +338,7 @@ DEPENDENCIES
   govuk_publishing_components
   govuk_test
   listen
+  nokogiri
   plek
   rails (~> 7.0.4, >= 7.0.4.3)
   rspec-rails
