@@ -8,6 +8,7 @@ class Organisations
       {
         title: organisation[:title],
         slug: organisation[:slug],
+        acronym: organisation[:acronym],
       }
     end
   end
