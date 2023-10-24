@@ -12,8 +12,8 @@ class SitemapPresenter
       xml.urlset(xmlns: "http://www.sitemaps.org/schemas/sitemap/0.9") do
         content_items.each do |content_item|
           xml.url do
-            xml.loc external_url(content_item[:link])
-            xml.lastmod content_item[:last_updated] if content_item[:last_updated]
+            xml.loc external_url(content_item["link"])
+            xml.lastmod content_item["public_timestamp"] if content_item["public_timestamp"]
           end
         end
       end
