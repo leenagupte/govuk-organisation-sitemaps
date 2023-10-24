@@ -1,0 +1,5 @@
+<p>Sitemaps of content on GOV.UK by organisation</p>
+
+<% @organisations.each do |organisation| %>
+  <li><%= link_to(organisation[:title], organisation_sitemap_path(organisation_slug: organisation[:slug])) %></li>
+<% end %>
